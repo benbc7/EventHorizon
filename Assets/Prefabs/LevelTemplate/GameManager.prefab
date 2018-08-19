@@ -1,0 +1,305 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1348126158659588}
+  m_IsPrefabParent: 1
+--- !u!1 &1348126158659588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4733997026422412}
+  - component: {fileID: 114688157204167952}
+  - component: {fileID: 114474474911347210}
+  - component: {fileID: 114703657675534172}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4733997026422412
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1348126158659588}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114474474911347210
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1348126158659588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42394691452cc7d41ae01f6199ce86dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114688157204167952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1348126158659588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f4b5ee3f47644d899a71964c8c88e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inGamePanel: {fileID: 0}
+  pausePanel: {fileID: 0}
+  deathPanel: {fileID: 0}
+  winPanel: {fileID: 0}
+--- !u!114 &114703657675534172
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1348126158659588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64be1d8b1c7388e4d8cead1226baae8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound:
+  - clipName: MenuTrack
+    singleClip: {fileID: 8300000, guid: b8702bd46f9f3284ea54431a9164126b, type: 3}
+    randomize: 0
+    randomClips: []
+    volume: 1
+    pitch: 1
+    audioMixerGroup: {fileID: 243463690108994062, guid: 5ee032ca0e9053e4f9b803bc112d2ad3,
+      type: 2}
+    loop: 1
+    playOnAwake: 1
+  - clipName: Footstep
+    singleClip: {fileID: 0}
+    randomize: 1
+    randomClips:
+    - {fileID: 8300000, guid: 2c91998cb891c9c4bb61398fc1001288, type: 3}
+    - {fileID: 8300000, guid: 831244625ddd0844eb268baa3ebb7eb4, type: 3}
+    - {fileID: 8300000, guid: a1ac157f5e5603941b8f8a334b422d38, type: 3}
+    - {fileID: 8300000, guid: 8b9c3826976f0ce4792cc13577393a29, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixerGroup: {fileID: 243430093205930540, guid: 5ee032ca0e9053e4f9b803bc112d2ad3,
+      type: 2}
+    loop: 0
+    playOnAwake: 0
+  - clipName: MenuUp
+    singleClip: {fileID: 8300000, guid: 3a84e0f81f01a3744b32f80101ec5995, type: 3}
+    randomize: 0
+    randomClips: []
+    volume: 1
+    pitch: 1
+    audioMixerGroup: {fileID: 243411010708360320, guid: 5ee032ca0e9053e4f9b803bc112d2ad3,
+      type: 2}
+    loop: 0
+    playOnAwake: 0
+  - clipName: MenuDown
+    singleClip: {fileID: 8300000, guid: 136150c090a8f3c40b2fe337b5b89359, type: 3}
+    randomize: 0
+    randomClips: []
+    volume: 0
+    pitch: 0
+    audioMixerGroup: {fileID: 243411010708360320, guid: 5ee032ca0e9053e4f9b803bc112d2ad3,
+      type: 2}
+    loop: 0
+    playOnAwake: 0
+  - clipName: MenuConfirm
+    singleClip: {fileID: 8300000, guid: 01e0b0f1f726b34498678004f4d564d6, type: 3}
+    randomize: 0
+    randomClips: []
+    volume: 1
+    pitch: 1
+    audioMixerGroup: {fileID: 243411010708360320, guid: 5ee032ca0e9053e4f9b803bc112d2ad3,
+      type: 2}
+    loop: 0
+    playOnAwake: 0
+  - clipName: MenuBack
+    singleClip: {fileID: 8300000, guid: 9e1bae0830ed6ab488f9cfb256488176, type: 3}
+    randomize: 0
+    randomClips: []
+    volume: 1
+    pitch: 1
+    audioMixerGroup: {fileID: 243411010708360320, guid: 5ee032ca0e9053e4f9b803bc112d2ad3,
+      type: 2}
+    loop: 0
+    playOnAwake: 0
+  - clipName: ShootAssaultRifle
+    singleClip: {fileID: 0}
+    randomize: 1
+    randomClips:
+    - {fileID: 8300000, guid: c652add29384f56418ae3905c52150ed, type: 3}
+    - {fileID: 8300000, guid: e9bc6d35d946f3349bd1287b05b6d6b7, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixerGroup: {fileID: 243742264262667674, guid: 5ee032ca0e9053e4f9b803bc112d2ad3,
+      type: 2}
+    loop: 0
+    playOnAwake: 0
+  - clipName: ShootShotgun
+    singleClip: {fileID: 8300000, guid: 2191e2289cc18fa4fb92ba2cc5d895a3, type: 3}
+    randomize: 0
+    randomClips: []
+    volume: 1
+    pitch: 1
+    audioMixerGroup: {fileID: 243455130651092582, guid: 5ee032ca0e9053e4f9b803bc112d2ad3,
+      type: 2}
+    loop: 0
+    playOnAwake: 0
+  - clipName: JumpLanding
+    singleClip: {fileID: 8300000, guid: 2196bd1474a572a4e8df96eb9f5330e0, type: 3}
+    randomize: 1
+    randomClips: []
+    volume: 1
+    pitch: 1
+    audioMixerGroup: {fileID: 243326760372045968, guid: 5ee032ca0e9053e4f9b803bc112d2ad3,
+      type: 2}
+    loop: 0
+    playOnAwake: 0
+  - clipName: EquipWeapon
+    singleClip: {fileID: 0}
+    randomize: 1
+    randomClips:
+    - {fileID: 8300000, guid: 69db3ad75d1f9b44889c2d467c127be1, type: 3}
+    - {fileID: 8300000, guid: 0cf2dd391c7de364199c03d40fdce352, type: 3}
+    - {fileID: 8300000, guid: aa4f0adb274e8d542865fda242842310, type: 3}
+    - {fileID: 8300000, guid: bca9ddbfdea69674dac1cde301af0f66, type: 3}
+    - {fileID: 8300000, guid: 7006f71ec19b36546bc19bc4ec116746, type: 3}
+    - {fileID: 8300000, guid: 74655a81f9fad0a43b9f3c94d5c9eecd, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixerGroup: {fileID: 243160873145823278, guid: 5ee032ca0e9053e4f9b803bc112d2ad3,
+      type: 2}
+    loop: 0
+    playOnAwake: 0
+  - clipName: SmallHit
+    singleClip: {fileID: 0}
+    randomize: 1
+    randomClips:
+    - {fileID: 8300000, guid: 36339f23db1aeed4da9933d44fba258c, type: 3}
+    - {fileID: 8300000, guid: c86b1c168134acc41aadb318015d297f, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixerGroup: {fileID: 243205241659022674, guid: 5ee032ca0e9053e4f9b803bc112d2ad3,
+      type: 2}
+    loop: 0
+    playOnAwake: 0
+  - clipName: HardHit
+    singleClip: {fileID: 8300000, guid: ff71e7b4f3d77634b91368f647d8eba4, type: 3}
+    randomize: 1
+    randomClips: []
+    volume: 1
+    pitch: 1
+    audioMixerGroup: {fileID: 243205241659022674, guid: 5ee032ca0e9053e4f9b803bc112d2ad3,
+      type: 2}
+    loop: 0
+    playOnAwake: 0
+  - clipName: SmallExplosion
+    singleClip: {fileID: 0}
+    randomize: 1
+    randomClips:
+    - {fileID: 8300000, guid: e5184e11b0b2d0048bc2bc654080f39b, type: 3}
+    - {fileID: 8300000, guid: b8a913049d0d3284b828c48a0edb9878, type: 3}
+    - {fileID: 8300000, guid: d2490ed71d8ad874f8c3e94014fc4455, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixerGroup: {fileID: 243403773197324084, guid: 5ee032ca0e9053e4f9b803bc112d2ad3,
+      type: 2}
+    loop: 0
+    playOnAwake: 0
+  - clipName: LargeExplosion
+    singleClip: {fileID: 0}
+    randomize: 1
+    randomClips:
+    - {fileID: 8300000, guid: 52aea3127c9448744b312557efd87708, type: 3}
+    - {fileID: 8300000, guid: c64d7664467b997419b94c54dc648d5c, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixerGroup: {fileID: 243403773197324084, guid: 5ee032ca0e9053e4f9b803bc112d2ad3,
+      type: 2}
+    loop: 0
+    playOnAwake: 0
+  - clipName: ChargeRailGun
+    singleClip: {fileID: 0}
+    randomize: 1
+    randomClips:
+    - {fileID: 8300000, guid: 76ce32220ce307047a4e7c26b5c1c479, type: 3}
+    - {fileID: 8300000, guid: cbcddafde6f33c74b83fa3c150338409, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixerGroup: {fileID: 243326100586413658, guid: 5ee032ca0e9053e4f9b803bc112d2ad3,
+      type: 2}
+    loop: 0
+    playOnAwake: 0
+  - clipName: ShootRailGun
+    singleClip: {fileID: 0}
+    randomize: 1
+    randomClips:
+    - {fileID: 8300000, guid: 34ef80612329c944ea74981f7eb39d02, type: 3}
+    - {fileID: 8300000, guid: a7f623160b2522449bbeb867e70fde3e, type: 3}
+    volume: 1
+    pitch: 1
+    audioMixerGroup: {fileID: 243326100586413658, guid: 5ee032ca0e9053e4f9b803bc112d2ad3,
+      type: 2}
+    loop: 0
+    playOnAwake: 0
+  - clipName: Hover
+    singleClip: {fileID: 8300000, guid: 65c6b9d4bab84b2469ee7978d75831d1, type: 3}
+    randomize: 0
+    randomClips: []
+    volume: 1
+    pitch: 1
+    audioMixerGroup: {fileID: 243918427746112182, guid: 5ee032ca0e9053e4f9b803bc112d2ad3,
+      type: 2}
+    loop: 0
+    playOnAwake: 0
+  - clipName: Select
+    singleClip: {fileID: 8300000, guid: 1db59ae192e6b45ffa3350a511aa9250, type: 3}
+    randomize: 0
+    randomClips: []
+    volume: 1
+    pitch: 1
+    audioMixerGroup: {fileID: 243514076452252878, guid: 5ee032ca0e9053e4f9b803bc112d2ad3,
+      type: 2}
+    loop: 0
+    playOnAwake: 0
+  - clipName: Window
+    singleClip: {fileID: 8300000, guid: 517daaa65eb864871b884c7c2155e7f4, type: 3}
+    randomize: 0
+    randomClips: []
+    volume: 1
+    pitch: 1
+    audioMixerGroup: {fileID: 243831242952166996, guid: 5ee032ca0e9053e4f9b803bc112d2ad3,
+      type: 2}
+    loop: 0
+    playOnAwake: 0
+  - clipName: Back
+    singleClip: {fileID: 8300000, guid: eb28fada5bd804ea8baddde93a6a5aaa, type: 3}
+    randomize: 0
+    randomClips: []
+    volume: 1
+    pitch: 1
+    audioMixerGroup: {fileID: 243904719041370224, guid: 5ee032ca0e9053e4f9b803bc112d2ad3,
+      type: 2}
+    loop: 0
+    playOnAwake: 0

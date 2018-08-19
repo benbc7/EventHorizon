@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 6dadcc891a1e941008554bc8a5c6b746
+timeCreated: 1511565323
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: neo latina
+  fontNames:
+  - neo latina
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
